@@ -3900,7 +3900,8 @@ Public Class FormDashboards
     End Sub
 
     Private Sub btnOpenAnalytics_Click(sender As Object, e As EventArgs) Handles btnOpenAnalytics.Click
-        FormAnalytics.ShowDialog()
+        Dim f As New FormAnalytics()
+        f.ShowDialog()
 
     End Sub
 
