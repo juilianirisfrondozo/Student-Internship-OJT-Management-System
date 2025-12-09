@@ -23,7 +23,7 @@ Partial Class FormAnalytics
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        Dim DataGridViewCellStyle2 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As DataGridViewCellStyle = New DataGridViewCellStyle()
         btnImport = New Button()
         btnMachineLearning = New Button()
         btnBack = New Button()
@@ -43,7 +43,7 @@ Partial Class FormAnalytics
         ' 
         ' btnImport
         ' 
-        btnImport.Location = New Point(1342, 25)
+        btnImport.Location = New Point(1341, 25)
         btnImport.Name = "btnImport"
         btnImport.Size = New Size(141, 46)
         btnImport.TabIndex = 0
@@ -136,14 +136,14 @@ Partial Class FormAnalytics
         dgvImportFile.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvImportFile.Location = New Point(100, 103)
         dgvImportFile.Name = "dgvImportFile"
-        DataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = Color.MintCream
-        DataGridViewCellStyle2.Font = New Font("Segoe UI", 9F)
-        DataGridViewCellStyle2.ForeColor = SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = DataGridViewTriState.True
-        dgvImportFile.RowHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = Color.MintCream
+        DataGridViewCellStyle3.Font = New Font("Segoe UI", 9F)
+        DataGridViewCellStyle3.ForeColor = SystemColors.WindowText
+        DataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight
+        DataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText
+        DataGridViewCellStyle3.WrapMode = DataGridViewTriState.True
+        dgvImportFile.RowHeadersDefaultCellStyle = DataGridViewCellStyle3
         dgvImportFile.RowHeadersWidth = 20
         dgvImportFile.Size = New Size(1748, 202)
         dgvImportFile.TabIndex = 282
