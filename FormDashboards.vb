@@ -116,7 +116,7 @@ Public Class FormDashboards
 
 
         ' Set icon sa form at taskbar
-        Me.Icon = New System.Drawing.Icon("C:\Users\acer\Downloads\buttons or icons\internship_icon.ico")
+        'Me.Icon = New System.Drawing.Icon("C:\Users\acer\Downloads\buttons or icons\internship_icon.ico")
         Me.ShowIcon = True
 
 
@@ -3345,7 +3345,7 @@ Public Class FormDashboards
 
     End Sub
 
-    Private Sub Panel17_Paint(sender As Object, e As PaintEventArgs) Handles Panel17.Paint
+    Private Sub Panel17_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
@@ -3855,7 +3855,7 @@ Public Class FormDashboards
         Return dt
     End Function
 
-    Private Sub lnklblPython_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lnklblPython.LinkClicked
+    Private Sub lnklblPython_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs)
         Process.Start("explorer.exe", "C:\Users\acer\PycharmProjects\PythonProject\BSIT-2D\DraftFinal.ipynb")
     End Sub
 
@@ -3898,6 +3898,13 @@ Public Class FormDashboards
             PictureChanged = True
         End If
     End Sub
+
+    Private Sub btnOpenAnalytics_Click(sender As Object, e As EventArgs) Handles btnOpenAnalytics.Click
+        FormAnalytics.ShowDialog()
+
+    End Sub
+
+
 
 
 

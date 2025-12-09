@@ -526,18 +526,15 @@ Partial Class FormDashboards
         lblHomeCompleted = New Label()
         pnlCompleted = New Panel()
         pnlHome = New Panel()
-        Label167 = New Label()
+        btnOpenAnalytics = New Button()
         Label166 = New Label()
         Label145 = New Label()
         Panel30 = New Panel()
         Panel31 = New Panel()
         Panel26 = New Panel()
         Panel28 = New Panel()
-        lnklblPython = New LinkLabel()
         pnlPending = New Panel()
         lblHomePending = New Label()
-        Panel17 = New Panel()
-        Panel27 = New Panel()
         Label172 = New Label()
         OpenFileDialog1 = New OpenFileDialog()
         Panel1.SuspendLayout()
@@ -618,7 +615,6 @@ Partial Class FormDashboards
         Panel30.SuspendLayout()
         Panel26.SuspendLayout()
         pnlPending.SuspendLayout()
-        Panel17.SuspendLayout()
         SuspendLayout()
         ' 
         ' btnHome
@@ -6971,14 +6967,12 @@ Partial Class FormDashboards
         ' pnlHome
         ' 
         pnlHome.BackColor = Color.White
-        pnlHome.Controls.Add(Label167)
+        pnlHome.Controls.Add(btnOpenAnalytics)
         pnlHome.Controls.Add(Label166)
         pnlHome.Controls.Add(Label145)
         pnlHome.Controls.Add(Panel30)
         pnlHome.Controls.Add(Panel26)
-        pnlHome.Controls.Add(lnklblPython)
         pnlHome.Controls.Add(pnlPending)
-        pnlHome.Controls.Add(Panel17)
         pnlHome.Controls.Add(pnlOnGoing)
         pnlHome.Controls.Add(Panel18)
         pnlHome.Controls.Add(Label6)
@@ -6991,17 +6985,17 @@ Partial Class FormDashboards
         pnlHome.Size = New Size(1529, 935)
         pnlHome.TabIndex = 221
         ' 
-        ' Label167
+        ' btnOpenAnalytics
         ' 
-        Label167.AutoSize = True
-        Label167.BackColor = Color.Transparent
-        Label167.Font = New Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label167.ForeColor = Color.FromArgb(CByte(8), CByte(48), CByte(25))
-        Label167.Location = New Point(247, 561)
-        Label167.Name = "Label167"
-        Label167.Size = New Size(322, 31)
-        Label167.TabIndex = 280
-        Label167.Text = "Average Scores from Q1-Q20"
+        btnOpenAnalytics.BackColor = Color.YellowGreen
+        btnOpenAnalytics.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnOpenAnalytics.ForeColor = SystemColors.Control
+        btnOpenAnalytics.Location = New Point(35, 799)
+        btnOpenAnalytics.Name = "btnOpenAnalytics"
+        btnOpenAnalytics.Size = New Size(237, 80)
+        btnOpenAnalytics.TabIndex = 280
+        btnOpenAnalytics.Text = "Run Analytics"
+        btnOpenAnalytics.UseVisualStyleBackColor = False
         ' 
         ' Label166
         ' 
@@ -7063,21 +7057,6 @@ Partial Class FormDashboards
         Panel28.Size = New Size(351, 261)
         Panel28.TabIndex = 274
         ' 
-        ' lnklblPython
-        ' 
-        lnklblPython.ActiveLinkColor = Color.FromArgb(CByte(97), CByte(144), CByte(118))
-        lnklblPython.AutoSize = True
-        lnklblPython.BackColor = Color.Transparent
-        lnklblPython.CausesValidation = False
-        lnklblPython.Font = New Font("Segoe UI Semibold", 13.8F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lnklblPython.LinkColor = Color.FromArgb(CByte(0), CByte(64), CByte(0))
-        lnklblPython.Location = New Point(254, 892)
-        lnklblPython.Name = "lnklblPython"
-        lnklblPython.Size = New Size(297, 31)
-        lnklblPython.TabIndex = 276
-        lnklblPython.TabStop = True
-        lnklblPython.Text = "View Python Notebook File"
-        ' 
         ' pnlPending
         ' 
         pnlPending.BackColor = Color.White
@@ -7099,24 +7078,6 @@ Partial Class FormDashboards
         lblHomePending.Size = New Size(85, 100)
         lblHomePending.TabIndex = 275
         lblHomePending.Text = "0"
-        ' 
-        ' Panel17
-        ' 
-        Panel17.BackColor = Color.FromArgb(CByte(188), CByte(221), CByte(203))
-        Panel17.Controls.Add(Panel27)
-        Panel17.Location = New Point(141, 598)
-        Panel17.Name = "Panel17"
-        Panel17.Size = New Size(540, 283)
-        Panel17.TabIndex = 272
-        ' 
-        ' Panel27
-        ' 
-        Panel27.BackColor = Color.FromArgb(CByte(188), CByte(221), CByte(203))
-        Panel27.BackgroundImage = CType(resources.GetObject("Panel27.BackgroundImage"), Image)
-        Panel27.Location = New Point(11, 10)
-        Panel27.Name = "Panel27"
-        Panel27.Size = New Size(518, 261)
-        Panel27.TabIndex = 273
         ' 
         ' Label172
         ' 
@@ -7277,7 +7238,6 @@ Partial Class FormDashboards
         Panel26.ResumeLayout(False)
         pnlPending.ResumeLayout(False)
         pnlPending.PerformLayout()
-        Panel17.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
     Friend WithEvents btnHome As RoundedButton
@@ -7724,7 +7684,6 @@ Partial Class FormDashboards
     Friend WithEvents lblHomeOngoing As Label
     Friend WithEvents Panel18 As Panel
     Friend WithEvents lblHomeTotalInterns As Label
-    Friend WithEvents Panel17 As Panel
     Friend WithEvents pnlPending As Panel
     Friend WithEvents lblHomePending As Label
     Friend WithEvents lblHomeTitleAs As Label
@@ -7761,14 +7720,12 @@ Partial Class FormDashboards
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents pctBoxIcon As PictureBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents lnklblPython As LinkLabel
     Friend WithEvents Panel26 As Panel
-    Friend WithEvents Panel27 As Panel
     Friend WithEvents Panel28 As Panel
     Friend WithEvents Label166 As Label
     Friend WithEvents Label145 As Label
     Friend WithEvents Panel30 As Panel
     Friend WithEvents Panel31 As Panel
-    Friend WithEvents Label167 As Label
+    Friend WithEvents btnOpenAnalytics As Button
 
 End Class
